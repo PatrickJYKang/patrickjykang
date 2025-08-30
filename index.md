@@ -21,7 +21,7 @@ So you can get a better idea of my interests:
 
 ## Contact
 - Email pkang at webb dot org
-- Discord patrickkang.
+- Discord patrickkang. (with a dot at the end)
 
 Ask me about my work, interests, or anything football!
 
