@@ -1,5 +1,3 @@
-# Hi!
-
 ## About me
 I have fun with web apps and football data often with the help of LLMs. I also love football ⚽. I want to use my skills in technology and otherwise to give back whatever I can to the game that has given me so much.
 
