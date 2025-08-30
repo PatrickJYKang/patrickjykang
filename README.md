@@ -7,15 +7,15 @@ I have fun with web apps and football data often with the help of LLMs. I also l
 I have also worked with football analysis both from video and data.
 
 #### Current worklist:
-- https://github.com/PatrickJYKang/visualisations
-- https://github.com/PatrickJYKang/patrickjykang
+- [https://github.com/PatrickJYKang/visualisations](https://github.com/PatrickJYKang/visualisations)
+- [https://github.com/PatrickJYKang/patrickjykang](https://github.com/PatrickJYKang/patrickjykang)
 
 ## My favourite repos
 So you can get a better idea of my interests:
-- (https://github.com/subhashhhhhh/Fastlytics)[https://github.com/subhashhhhhh/Fastlytics]. Easy to use, looks beautiful, and free.
-- (https://github.com/JaseZiv/worldfootballR_data)[https://github.com/JaseZiv/worldfootballR_data]. Not necessarily updating but still works great for 2024-25 data.
-- (https://github.com/luanti-org/luanti)[https://github.com/luanti-org/luanti]. Free and open source Minecraft.
-- (https://profiled.streamlit.app/)[https://profiled.streamlit.app/]. Not open-sourced but one of my favourite apps to quickly get a hold of scouting targets and broad playstyle.
+- [https://github.com/subhashhhhhh/Fastlytics](https://github.com/subhashhhhhh/Fastlytics). Easy to use, looks beautiful, and free.
+- [https://github.com/JaseZiv/worldfootballR_data](https://github.com/JaseZiv/worldfootballR_data). Not necessarily updating but still works great for 2024-25 data.
+- [https://github.com/luanti-org/luanti](https://github.com/luanti-org/luanti]). Free and open source Minecraft.
+- [https://profiled.streamlit.app/](https://profiled.streamlit.app/). Not open-sourced but one of my favourite apps to quickly get a hold of scouting targets and broad playstyle.
 
 ## Contact
 - Email pkang at webb dot org
