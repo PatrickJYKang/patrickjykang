@@ -10,4 +10,4 @@ Learned to use new 3D printer with better features, and basics and limitations o
 
 ![WIP CAD](pnp_cad.png)
 
-![WIP prototype](IMG_2987(2).heic)
+![WIP prototype](IMG_2987_(2).jpg)
