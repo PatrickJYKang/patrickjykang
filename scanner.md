@@ -88,3 +88,14 @@ void loop() {
     }
 }
 ```
+
+## Moving the sensor
+A sensor in place does not do much. To create a functioning 3D scanner one must either move the scanner or the space/object being scanned. Three options were considered:
+
+ - A turret mechanism to move the sensor in pitch and yaw to scan a scene in front of the sensor.
+ - A dropping turntable that would allow the sensor to capture 360-degree slices of an object on the turntable.
+ - Strap the sensor onto a 6-DOF inertial measurement unit.
+
+Option 3 was quickly dismissed for lack of resources. Between option 1 and 2, option 1 was probably the easier one to implement and more importantly took up a lower volume, so it was considered first.
+
+To convert motor movements into yaw and pitch would essentially require two L-brackets. These were 3D printed and are yet to be assembled.
