@@ -5,10 +5,10 @@ This is a planning document/journal for the 3D scanner project.
 ## Getting the scanner to work
 
 ### Parts
-[IMG_3144.jpeg](IMG_3144.jpeg)
+![IMG_3144.jpeg](IMG_3144.jpeg)
 
 ### Circuit Layout
-[IMG_3148.jpeg](IMG_3148.jpeg)
+![IMG_3148.jpeg](IMG_3148.jpeg)
 
 ### Code
 This code reads the raw voltage value, converts it to a distance, and sends it to serial.
