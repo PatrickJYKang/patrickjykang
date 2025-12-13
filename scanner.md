@@ -103,13 +103,13 @@ Option 3 was quickly dismissed for lack of resources. Between option 1 and 2, op
 
 ### Mechanical connection
 
-To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but eventually a laser-cut design involving a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. 
+To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but eventually a laser-cut design involving a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
 
-
+![m2m.png](m2m.png)
 
 ### Moving the stepper
 
-The stepper interfaced with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/).
+The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/).
 
 See [https://github.com/luke-raus/3d-scanner](https://github.com/luke-raus/3d-scanner) for some code examples that were used to test system functionality.
 
