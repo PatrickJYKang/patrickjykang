@@ -103,9 +103,13 @@ Option 3 was quickly dismissed for lack of resources. Between option 1 and 2, op
 
 ### Mechanical connection
 
-To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but eventually a laser-cut design involving a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
+To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but laser cutting was eventually preferred due to faster production and iteration speed. The final laser-cut design involved a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
 
 ![m2m.png](m2m.png)
+
+A full setup is shown below. This involves 4 total laser-cut parts.
+
+
 
 ### Moving the stepper
 
