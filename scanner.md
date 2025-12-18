@@ -101,6 +101,10 @@ A sensor in place does not do much. To create a functioning 3D scanner one must 
 
 Option 3 was quickly dismissed for lack of resources. Between option 1 and 2, option 1 was probably the easier one to implement and more importantly took up a lower volume, so it was considered first.
 
+### Moving the stepper
+
+The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/).
+
 ### Mechanical connection
 
 To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but laser cutting was eventually preferred due to faster production and iteration speed. The final laser-cut design involved a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
@@ -109,12 +113,17 @@ To convert motor movements into yaw and pitch would essentially require two L-br
 
 A full setup is shown below. This involves 4 total laser-cut parts.
 
+![IMG_3309.jpeg](IMG_3309.jpeg)
+
+## Integration into Product
 
 
-### Moving the stepper
 
-The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/).
+### Code
 
-See [https://github.com/luke-raus/3d-scanner](https://github.com/luke-raus/3d-scanner) for some code examples that were used to test system functionality.
+See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKang/3d-scanner). This repository includes both code to run the stepper and sensor off the arduino, as well as python code to read input off of serial and plot it.
+
+### Results
+
 
 
