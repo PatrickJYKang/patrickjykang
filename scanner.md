@@ -127,7 +127,7 @@ As is pretty obvious the connections are taped and not done in a very sophistica
 
 ### Code
 
-See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKang/3d-scanner). This repository includes both code to run the stepper and sensor off the arduino, as well as python code to read input off of serial and plot it.
+See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKang/3d-scanner). The .ino script runs the steppers and sensor: the base stepper turns through 180 degrees in which the sensor takes a measurement every step and the arduino sends this value along with the inferred position values of the steppers through serial. The python script then takes these values and using polar coordinates converts them to 3D Cartesian coordinates, which are plotted using `matplotlib`. No additional post-processing has been successfully implemented.
 
 ### Results
 
