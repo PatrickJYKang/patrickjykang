@@ -6,6 +6,8 @@ This is a planning document/journal for the 3D scanner project.
 
 We use a SHARP GP2Y0A21YK0F IR distance sensor. [Datasheet](https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a21yk_e.pdf).
 
+These have an effective range of 10-80 cm which is good for our purposes. Error in measurement is not mentioned officially but usually cited in the order of magnitude of single centimetres. 
+
 ### Parts
 ![IMG_3144.jpeg](IMG_3144.jpeg)
 
@@ -103,7 +105,7 @@ Option 3 was quickly dismissed for lack of resources. Between option 1 and 2, op
 
 ### Moving the stepper
 
-The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/).
+The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf) and a [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/). These were connected in a standard manner with 1/16 microstepping configured. 
 
 ### Mechanical connection
 
@@ -137,4 +139,4 @@ In general, the setup is good at identifying flat and perpendicular surfaces, bu
 
 ![out2.png](out2.png)
 
-That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. 
+That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. Surprisingly, these "flying pixels" can reach multiple tens of centimetres away from the object scanned, which is not typical. These would be removed in post-processing in any case.
