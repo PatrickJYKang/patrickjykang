@@ -111,13 +111,17 @@ To convert motor movements into yaw and pitch would essentially require two L-br
 
 ![m2m.png](m2m.png)
 
+## Integration into Product
+
+There was less of an emphasis on creating a "nice" product and the focus was more in getting the sensor to move, take readings, and display its outputs correctly.
+
+### Wiring
+
 A full setup is shown below. This involves 4 total laser-cut parts.
 
 ![IMG_3309.jpeg](IMG_3309.jpeg)
 
-## Integration into Product
-
-
+As is pretty obvious the connections are taped and not done in a very sophisticated or robust way. No wire organisation was ever considered. The sensor was plugged into the CNC shield. 
 
 ### Code
 
@@ -125,5 +129,12 @@ See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKa
 
 ### Results
 
+An example screenshot of the results is shown below.
 
+![out1.png](out1.png)
 
+In general, the setup is good at identifying flat and perpendicular surfaces, but struggles with curved or slanted/tilted surfaces. It is also capable of rather precisely tracing holes in objects, as shown in the below example.
+
+![out2.png](out2.png)
+
+That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. 
