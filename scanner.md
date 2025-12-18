@@ -109,7 +109,7 @@ The stepper interfaces with the arduino via a [CNC Shield from Makerstore](https
 
 ### Mechanical connection
 
-To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but laser cutting was eventually preferred due to faster production and iteration speed. The final laser-cut design involved a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
+To convert motor movements into yaw and pitch would essentially require two L-brackets, one motor to motor and one motor to scanner. These were initially 3D printed but laser cutting was eventually preferred due to faster production and iteration speed. The final laser-cut design, cut on MDF board, involved a lot of captured nuts to hold both the bracket together and also in place of a stepper hub. The drawing of half of the motor to motor bracket that includes the "motor hub" is shown below.
 
 ![m2m.png](m2m.png)
 
@@ -140,3 +140,14 @@ In general, the setup is good at identifying flat and perpendicular surfaces, bu
 ![out2.png](out2.png)
 
 That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. Surprisingly, these "flying pixels" can reach multiple tens of centimetres away from the object scanned, which is not typical. These would be removed in post-processing in any case.
+
+## Reflections
+
+A list of things to consider in future when working with similar components or for replication of this project:
+
+ - Isolate every single source of error: for example, on a the stepper motors, those may be faulty code, a faulty CNC shield, a faulty stepper driver, a faulty power supply, or a faulty stepper.
+ - Microstepping is easy, so get it implemented before thinking about other issues that would immediately become irrelevant.
+ - It is more important to get the whole chain of components and data fully set up before iterating for quality.
+ - Laser cutting is usually superior to 3D printing in speed, costs, and durability in certain areas, but becomes complex outside of flat plates.
+ - It is preferred not to use too many stock components that may be replicated natively, motor hubs for example.
+ - Expect your raw data to be a mess, find something from that mess with eyes, if that makes sense, then clean up mess with software, if not, something is probably either not connected or otherwise faulty.
