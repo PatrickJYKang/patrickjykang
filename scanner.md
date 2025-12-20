@@ -181,7 +181,7 @@ Sentimentally as a group we were always a bit too eagerly or confidently focused
 
 ### Components
 
- - Motor-to-motor L bracket, motor-to-sensor L bracket
+ - Motor-to-motor L-bracket, motor-to-sensor L-bracket
  - M4 screws and nuts (primarily)
  - [Arduino Uno](https://store-usa.arduino.cc/products/arduino-uno-rev3)
  - [SHARP GP2Y0A21YK0F sensor](https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a21yk_e.pdf)
@@ -199,3 +199,4 @@ This is not an exhaustive list but some highlights:
  - Dr. Dzula, provided a wealth of library (and non-library) resources, motivation, and help with this journal.
  - Thomas did lots of arduino-to-stepper work that we largely based our setup off of. See his great documentation at [https://www.pigtt.com/](https://www.pigtt.com/).
  - Harry came up with the ball turret idea that first got our sensor moving.
+ - Charley, also contributed great technical knowledge, and designed part of the L-bracket.
