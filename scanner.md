@@ -131,6 +131,10 @@ See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKa
 
 ### Results
 
+These objects were scanned (not necessarily in this configuration)
+
+![in1.png](in1.png)
+
 An example screenshot of the results is shown below.
 
 ![out1.png](out1.png)
