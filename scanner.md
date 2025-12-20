@@ -127,7 +127,7 @@ As is pretty obvious the connections are taped and not done in a very sophistica
 
 ### Code
 
-See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKang/3d-scanner). The .ino script runs the steppers and sensor: the base stepper turns through 180 degrees in which the sensor takes a measurement every step and the arduino sends this value along with the inferred position values of the steppers through serial. The python script then takes these values and using polar coordinates converts them to 3D Cartesian coordinates, which are plotted using `matplotlib`. No additional post-processing has been successfully implemented.
+See [https://github.com/PatrickJYKang/3d-scanner](https://github.com/PatrickJYKang/3d-scanner). The .ino script runs the steppers and sensor: the base stepper turns through 180 degrees in which the sensor takes a measurement every step and the arduino sends this value along with the inferred position values of the steppers through serial. The python script then takes these values and using polar coordinates converts them to 3D Cartesian coordinates, which are plotted using `matplotlib`.
 
 ### Results
 
@@ -139,7 +139,20 @@ In general, the setup is good at identifying flat and perpendicular surfaces, bu
 
 ![out2.png](out2.png)
 
-That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. Surprisingly, these "flying pixels" can reach multiple tens of centimetres away from the object scanned, which is not typical. These would be removed in post-processing in any case.
+That said, the most prominent issue affecting these readings seems to be stray points going in all directions especially at edge of objects. This is a common issue known as "flying pixels". Generally these are mitigated through post-processing software fixes. Surprisingly, these "flying pixels" can reach multiple tens of centimetres away from the object scanned, which is not typical.
+
+### Post-processing
+
+To address above issues post-processing was implemented in two steps:
+
+1. **Hard distance filter:** drops any points outside of 80 cm (the effective range of the sensor).
+2. **Neighbours filter:** for each point, program looks for points in a 3D radius defined by `--neighbor-radius-cm`, default 3 (cm). If it has fewer than `N` neighbours, as defined by `--neighbor-min-neighbors` (default 4), point is dropped at end of iteration. Repeats for `--neighbor-iterations` iterations, default 2.
+
+Example of post-processed point cloud:
+
+![out3.png](out3.png)
+
+The strange protrusion is as a result of an object containing a hole. Previously the setup worked well with holes, but in this case this was likely to to environmental factors.
 
 ## Reflections
 
