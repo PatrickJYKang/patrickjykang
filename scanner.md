@@ -156,6 +156,10 @@ The strange protrusion is as a result of an object containing a hole. Previously
 
 ## Reflections
 
+A personal reflection on this project:
+
+### Technical
+
 A list of things to consider in future when working with similar components or for replication of this project:
 
  - Isolate every single source of error: for example, on a the stepper motors, those may be faulty code, a faulty CNC shield, a faulty stepper driver, a faulty power supply, or a faulty stepper.
@@ -164,3 +168,34 @@ A list of things to consider in future when working with similar components or f
  - Laser cutting is usually superior to 3D printing in speed, costs, and durability in certain areas, but becomes complex outside of flat plates.
  - It is preferred not to use too many stock components that may be replicated natively, motor hubs for example.
  - Expect your raw data to be a mess, find something from that mess with eyes, if that makes sense, then clean up mess with software, if not, something is probably either not connected or otherwise faulty.
+
+### Personal
+
+I got to know the infrastructure around arduinos and such electronics a lot better. I have worked with arduinos on a very basic level but never more than a blinking LED or something simple closed-loop LED switch off of a YouTube video; in any case, my technical situational awareness around arduinos has increased. As a more software inclined person I learned to work with some of the oddities and practical inconveniences of hardware and electronics. I also learned how to read things from seemingly useless or messy data and come up with ways to clean that up. In general, the more this project moved along, the less I was inclined to clean up the mess, and instead I focused on actually getting something to work, then dealing with the mess. This does not just apply to the final data processing; other examples include wire organisation (we gave up), calibrating the sensor (originally one of the top priorities but was left behind), human written human readable code (all code was written by AI), a nice package for the "product" (everything was left exposed), all the other nicer options that we didn't get to (turntables, etc.), and actually correct maths (our maths did not take into account the size of the setup itself). 
+
+Sentimentally as a group we were always a bit too eagerly or confidently focused on the next step, perhaps often getting ahead of ourselves too much. This led to a lot of back and forth in getting things that were not fully set up do do the next thing which it was not prepared for. This only started to slow down perhaps after Thanksgiving break when the time pressure was somewhat lifted (original target was working sensor by Thanksgiving). More progress was probably made since then than before. It was, in any case, a very positive environment to work in.
+
+## Resources
+
+(Not) everything it took to complete this project. Electronics, as well as human resources.
+
+### Components
+
+ - Motor-to-motor L bracket, motor-to-sensor L bracket
+ - M4 screws and nuts (primarily)
+ - [Arduino Uno](https://store-usa.arduino.cc/products/arduino-uno-rev3)
+ - [SHARP GP2Y0A21YK0F sensor](https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a21yk_e.pdf)
+ - [A4988 Stepper Driver](https://makerstore.cc/product/stepper-motor-driver-a4988/)
+ - [CNC Shield](https://www.makerstore.com.au/wp-content/uploads/filebase/publications/CNC-Shield-Guide-v1.0.pdf)
+ - [NEMA 17 Steppers](https://www.omc-stepperonline.com/nema-17-stepper-motor)
+ - Jumper wires
+ - Laptop with USB-A serial, running Arduino IDE and python.
+
+### People
+
+This is not an exhaustive list but some highlights:
+
+ - Mr. Raus, provided much technical knowledge, sensibility, L-bracket design ideas, and [https://github.com/luke-raus/3d-scanner](https://github.com/luke-raus/3d-scanner)
+ - Dr. Dzula, provided a wealth of library (and non-library) resources, motivation, and help with this journal.
+ - Thomas did lots of arduino-to-stepper work that we largely based our setup off of. See his great documentation at [https://www.pigtt.com/](https://www.pigtt.com/).
+ - Harry came up with the ball turret idea that first got our sensor moving.
