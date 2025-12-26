@@ -7,7 +7,6 @@ I have fun with web apps and football data often with the help of LLMs. I also l
 I have also worked with football analysis both from video and data.
 
 #### Current worklist:
-- [https://github.com/PatrickJYKang/print-queue](https://github.com/PatrickJYKang/print-queue)
 - [https://github.com/PatrickJYKang/patrickjykang](https://github.com/PatrickJYKang/patrickjykang)
 - [https://github.com/PatrickJYKang/lbw](https://github.com/PatrickJYKang/lbw)
 - A fully free, web-based, and self-contained football video analysis app.
